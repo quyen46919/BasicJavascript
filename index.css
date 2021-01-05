@@ -314,7 +314,7 @@ background-color: var(--icon-color);
 }
 .video-items .video-img{
   height: 57%;
-  width: 100%;
+  width: 108%;
   /* background-color: tan; */
   background-image: url(image/banner.jpg);
   background-size: cover;
