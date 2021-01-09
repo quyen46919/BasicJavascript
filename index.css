@@ -387,6 +387,7 @@ h4.video-title {
   width: 100%;
 }
 /* code animation for nav-top button */
+/* ---------------------------------------------------------------------------------- */
 .left-menu{
   /* display: none; */
 }
@@ -395,4 +396,9 @@ h4.video-title {
   left: 0;
   top:0;
   z-index: 3;
+}
+/* code for hidden col */
+/* -------------------------------------------------------------------------------------- */
+.md-visible{
+  display: none;
 }
