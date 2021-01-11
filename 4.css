@@ -1,0 +1,66 @@
+*{margin:0; padding: 0}
+
+._1phantu .dehienthi {
+    font-size: 14px;
+}
+
+.dehienthi {
+	position: absolute;
+	top: 44px;
+	width: 240px;
+	right: -14px;
+	opacity: 0;
+	visibility: hidden;
+
+
+}
+
+.ra{
+	opacity: 1;
+	visibility: visible;
+
+	animation: surprise 0.4s forwards;
+}
+
+.dehienthi:after {
+	content: "";
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 10px solid #00800005;
+	border-bottom-color: white;
+	top: -19px;
+	right: 25px;
+}
+
+
+.thanhxanh {
+	height: 50px;
+	width: 100%;
+	background: #3b5998;
+}
+._1phantu{
+	position: relative;
+	width: 28px;
+	margin-right: 45px;
+	left: 900px;
+	top: 6px;
+	font-size: 21px;
+	float: left;
+	cursor: pointer;
+	perspective: 500px;
+}
+.mautrang{
+	color: white;
+}
+ul.list-group li.list-group-item:hover{
+	transition: .2s;
+	background: #3b5998;
+	color: white;
+}
+@-webkit-keyframes surprise {
+/*	from{ transform: rotateY(-90deg); opacity: 0; transform-origin: 100% 100%; }
+	to{ transform: rotateY(0deg); opacity: 1; transform-origin: 100% 100%;}*/
+	0% { opacity: 0 }
+	50% { opacity: 1 }
+}
