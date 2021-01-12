@@ -1,21 +1,18 @@
-<<<<<<< HEAD
-@media (max-width: 997px) and (min-width:576px){
-=======
+
+
 
 @media  (max-width: 576px){
->>>>>>> feature/reponsive
+
     *{
         margin: 0!important;
         padding: 0!important;
     }
-<<<<<<< HEAD
     .md-visible{
         display: block;
     }
     .col-md-2.col-lg-2.left-menu {
         display: none;
     }
-=======
     .left-menu{
         display: none;
     }
@@ -141,5 +138,4 @@
         display: none;      
         cursor: none;
     }
->>>>>>> feature/reponsive
 }
