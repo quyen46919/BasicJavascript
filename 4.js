@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded",function(){
-
 	var nut = document.getElementsByClassName('declick');
 	var xoxuong = document.getElementsByClassName('dehienthi');
 
 	for (var l = 0; l < nut.length; l++) {
 		nut[l].onclick = function(){
-
 			if(this.classList[1] == 'mautrang'){
 				//khi có class màu trắng với xoxuong thì click lần 2 sẽ loại bỏ
 				this.classList.remove('mautrang');

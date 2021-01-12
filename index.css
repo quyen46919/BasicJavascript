@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* code for nav-blue */
+/* --------------------------------------------------- */
+.blue-nav {
+    height: 2.5em;
+    width: 100%;
+    background-color: #3b5998;
+    display: flex;
+    justify-content: flex-end;
+}
+.container {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10em;
+    position: relative;
+}
+.wrapper {
+    height: auto;
+    width: auto;
+    position: relative;
+}
+._1element {
+    font-size: 1.2em;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+.drop-down {
+    position: absolute;
+    top: 33px;
+    left: -120px;
+    /* display: none; */
+}
+.drop-down:nth-child(1) {
+    position: absolute;
+    top: 42px;
+    left: -12px;
+}
+ul.dd {
+    list-style: none;
+    background: white;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #b7b7b7;
+}
+ul.dd li {
+    width: 10em;
+    padding: 0.5em;
+    border-bottom: 1px solid #313131;
+    cursor: pointer;
+    transition: .1s;
+    text-align: center;
+}
+ul.dd li:last-child {
+    border: none;
+}
+ul.dd li:hover{
+    background-color: #4e6fb6;
+    color: white;
+}
+.drop-down:after {
+    content: '';
+    position: absolute;
+    left: 118px;
+    top: -19px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
