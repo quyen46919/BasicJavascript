@@ -37,7 +37,13 @@
     position: absolute;
     top: 33px;
     left: -120px;
-    /* display: none; */
+    display: none;
+
+    animation: showOn .25s forwards;
+}
+@-webkit-keyframes showOn{
+    from { bottom : -100px; opacity: 0; }
+    to { bottom: 0px; opacity: 1;}
 }
 .drop-down:nth-child(1) {
     position: absolute;
@@ -75,4 +81,12 @@ ul.dd li:hover{
     top: -19px;
     border: 10px solid transparent;
     border-bottom: 10px solid white;
+}
+/* code for js animation */
+/* -------------------------------------------- */
+._1element.active{
+    color: white;
+}
+.drop-down.active2{
+    display: block;
 }
