@@ -14,21 +14,21 @@ document.addEventListener("DOMContentLoaded",function(){
 				ndhienthira.classList.remove('ra');
 			}
 			else{
-						for (var k = 0; k < nut.length; k++) {
-							nut[k].classList.remove('mautrang');
-						}
-						this.classList.toggle('mautrang');
+				for (var k = 0; k < nut.length; k++) {
+					nut[k].classList.remove('mautrang');
+				}
+				this.classList.toggle('mautrang');
 
-						// thao tác với data
-						var hienthira = this.getAttribute('data-mk');
-						var ndhienthira = document.getElementById(hienthira);
-						for (var g = 0; g < xoxuong.length; g++) {
-							xoxuong[g].classList.remove('ra');
-						}
+				// thao tác với data
+				var hienthira = this.getAttribute('data-mk');
+				var ndhienthira = document.getElementById(hienthira);
+				for (var g = 0; g < xoxuong.length; g++) {
+					xoxuong[g].classList.remove('ra');
+				}
 
-						ndhienthira.classList.toggle('ra');
+				ndhienthira.classList.toggle('ra');
 
-					}
+			}
 
 		}// hết function
 		
