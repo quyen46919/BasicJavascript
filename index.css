@@ -62,10 +62,9 @@ li.list-item:nth-child(5){
 }
 
 .list-item.show{
-    animation: showOn 1s forwards 1;
-    /* animation: name duration direction iteration-count ; */
+    animation: toLeft 1s forwards 1;
 }
-@-webkit-keyframes showOn {
+@-webkit-keyframes toLeft {
     from {
         transform: translateX(-100%); opacity: 0;visibility: hidden;
     }
@@ -73,10 +72,21 @@ li.list-item:nth-child(5){
         transform: translateX(0); opacity: 1; visibility: visible;
     }
 }
-.list-item.hidden{
-    animation: letHidden 1s forwards 1;
+.list-item.show2{
+    animation: toRight 1s forwards 1;
 }
-@-webkit-keyframes letHidden {
+@-webkit-keyframes toRight {
+    from {
+        transform: translateX(100%); opacity: 0;visibility: hidden;
+    }
+    to {
+        transform: translateX(0); opacity: 1; visibility: visible;
+    }
+}
+.list-item.hidden{
+    animation: toLeftHidden 1s forwards 1;
+}
+@-webkit-keyframes toLeftHidden {
     from {
         transform: translateX(0); opacity: 1; visibility: visible;
     }
