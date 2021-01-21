@@ -2,91 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
-/* code for nav-blue */
-/* --------------------------------------------------- */
-.blue-nav {
-    height: 2.5em;
-    width: 100%;
-    background-color: #3b5998;
-    display: flex;
-    justify-content: flex-end;
-}
-.container {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 10em;
-    position: relative;
-}
-.wrapper {
-    height: auto;
-    width: auto;
-    position: relative;
-}
-._1element {
-    font-size: 1.2em;
-    color: #1d1d1d;
-    cursor: pointer;
-}
-.drop-down {
-    position: absolute;
-    top: 33px;
-    left: -120px;
-    display: none;
-
-    animation: showOn .25s forwards;
-}
-@-webkit-keyframes showOn{
-    from { bottom : -100px; opacity: 0; }
-    to { bottom: 0px; opacity: 1;}
-}
-.drop-down:nth-child(1) {
-    position: absolute;
-    top: 42px;
-    left: -12px;
-}
-ul.dd {
-    list-style: none;
-    background: white;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
+body{
     overflow: hidden;
-    border: 1px solid #b7b7b7;
 }
-ul.dd li {
-    width: 10em;
-    padding: 0.5em;
-    border-bottom: 1px solid #313131;
-    cursor: pointer;
-    transition: .1s;
-    text-align: center;
+.container{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: antiquewhite;
+
 }
-ul.dd li:last-child {
-    border: none;
+.container ul.list-items{
+    height: 100vh;
+    min-width: 100%;
+    list-style: none;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
-ul.dd li:hover{
-    background-color: #4e6fb6;
-    color: white;
-}
-.drop-down:after {
-    content: '';
+ul.list-items li.list-item {
+    min-height: 100vh;
+    min-width: 80%;
     position: absolute;
-    left: 118px;
-    top: -19px;
-    border: 10px solid transparent;
-    border-bottom: 10px solid white;
+    opacity: 0;
+    visibility: hidden;
+
+    background-size: cover;
+
 }
-/* code for js animation */
-/* -------------------------------------------- */
-._1element.active{
-    color: white;
+li.list-item:nth-child(even){
+    background-image: url('./image/canhdong.jpg');
+    z-index: 5;
 }
-.drop-down.active2{
-    display: block;
+li.list-item:nth-child(odd){
+    background-image: url('./image/canhdong.jpg');
+    z-index: 5;
+}
+li.list-item:nth-child(1){
+    background-image: url('./image/canhdong.jpg');
+    z-index: 5;
+}
+li.list-item:nth-child(2){
+    background-image: url('./image/cotden.jpg');
+    z-index: 4;
+}
+li.list-item:nth-child(3){
+    background-image: url('./image/dunglai.jpg');
+    z-index: 3;
+}
+li.list-item:nth-child(4){
+    background-image: url('./image/guongchieuduong.jpg');
+    z-index: 2;
+}
+li.list-item:nth-child(5){
+    background-image: url('./image/langque.jpg');
+    z-index: 1;
+}
+
+.list-item.show{
+    animation: showOn 1s forwards 1;
+    /* animation: name duration direction iteration-count ; */
+}
+@-webkit-keyframes showOn {
+    from {
+        transform: translateX(-100%); opacity: 0;visibility: hidden;
+    }
+    to {
+        transform: translateX(0); opacity: 1; visibility: visible;
+    }
+}
+.list-item.hidden{
+    animation: letHidden 1s forwards 1;
+}
+@-webkit-keyframes letHidden {
+    from {
+        transform: translateX(0); opacity: 1; visibility: visible;
+    }
+    to {
+        transform: translateX(100%); opacity: 0; visibility: hidden;
+    }
+}
+.btn-group{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    cursor: pointer;
+    z-index: 100;
+}
+.btn-group i.fas{
+    font-size: 10rem;
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+    position: absolute;
+}
+.btn-group i.fas.fa-angle-right{
+    right: 0;
 }
