@@ -66,18 +66,18 @@ li.list-item:nth-child(5){
 }
 @-webkit-keyframes toLeft {
     from {
-        transform: translateX(-100%); opacity: 0;visibility: hidden;
+        transform: translateX(100%); opacity: 0;visibility: hidden;
     }
     to {
         transform: translateX(0); opacity: 1; visibility: visible;
     }
 }
-.list-item.show2{
-    animation: toRight 1s forwards 1;
+.list-item.show1{
+    animation: toRight1 1s forwards 1;
 }
-@-webkit-keyframes toRight {
+@-webkit-keyframes toRight1 {
     from {
-        transform: translateX(100%); opacity: 0;visibility: hidden;
+        transform: translateX(-100%); opacity: 0;visibility: hidden;
     }
     to {
         transform: translateX(0); opacity: 1; visibility: visible;
@@ -87,6 +87,17 @@ li.list-item:nth-child(5){
     animation: toLeftHidden 1s forwards 1;
 }
 @-webkit-keyframes toLeftHidden {
+    from {
+        transform: translateX(0); opacity: 1; visibility: visible;
+    }
+    to {
+        transform: translateX(-100%); opacity: 0; visibility: hidden;
+    }
+}
+.list-item.hidden1{
+    animation: toLeftHidden1 1s forwards 1;
+}
+@-webkit-keyframes toLeftHidden1 {
     from {
         transform: translateX(0); opacity: 1; visibility: visible;
     }

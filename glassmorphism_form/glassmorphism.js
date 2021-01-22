@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     var errorText = document.querySelector('form p.hidden_text');
     userName.addEventListener('keyup', () => {
         formData.userName = userName.value;
-        // console.log(formData);
+        console.log(formData);
     })
     passWord.addEventListener('keyup', () => {
         formData.passWord = passWord.value;
-        // console.log(formData);
+        console.log(formData);
         
     })
     form.addEventListener('submit', (e) => {
